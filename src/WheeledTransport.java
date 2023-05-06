@@ -1,4 +1,6 @@
-public abstract class WheeledTransport {
+import com.sun.jdi.connect.Transport;
+
+public abstract class WheeledTransport implements Transport {
     private final String modelName;
     private final int wheelsCount;
 
@@ -16,5 +18,12 @@ public abstract class WheeledTransport {
     }
     public void updateTyre() {
         System.out.println("Меняем покрышку");
+    }
+
+    @Override
+    public void check() {
+        for (int i = 0; i < wheelsCount; i++) {
+            updateTyre();
+        }
     }
 }
