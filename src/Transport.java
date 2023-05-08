@@ -1,3 +1,3 @@
 public interface Transport {
-    void check();
+    void service();
 }

@@ -7,8 +7,8 @@ public abstract class MotorTransport extends WheeledTransport {
     }
 
     @Override
-    public void check() {
-        super.check();
+    public void service() {
+        super.service();
         checkEngine();
     }
 }

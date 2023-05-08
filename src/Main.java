@@ -10,16 +10,17 @@ public class Main {
         Bicycle bicycle2 = new Bicycle("bicycle2");
 
         Transport[] transports = {
-                (Transport) car,
-                (Transport) car2,
-                (Transport) truck,
-                (Transport) truck2,
-                (Transport) bicycle,
-                (Transport) bicycle2
+                 car,
+                 car2,
+                 truck,
+                 truck2,
+                 bicycle,
+                 bicycle2
         };
         ServiceStation station = new ServiceStation();
         for (Transport t : transports) {
-            station.check(t);
+            t.service();
+            System.out.println("-------------------");
         }
     }
 

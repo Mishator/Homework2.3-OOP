@@ -21,7 +21,7 @@ public abstract class WheeledTransport implements Transport {
     }
 
     @Override
-    public void check() {
+    public void service() {
         for (int i = 0; i < wheelsCount; i++) {
             updateTyre();
         }
